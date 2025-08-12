@@ -1,0 +1,110 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-08-12T08:14:21.2700064"><title>Media Object | Bootstrap Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"structure-of-the-media-object","level":0,"title":"Structure of the Media Object","anchor":"#structure-of-the-media-object"},{"id":"nesting-media-objects","level":0,"title":"Nesting Media objects","anchor":"#nesting-media-objects"},{"id":"alignment-in-media-objects","level":0,"title":"Alignment in Media Objects","anchor":"#alignment-in-media-objects"},{"id":"spacing-and-utilities","level":0,"title":"Spacing and Utilities","anchor":"#spacing-and-utilities"},{"id":"media-lists","level":0,"title":"Media Lists","anchor":"#media-lists"},{"id":"bootstrap-5-note","level":0,"title":"Bootstrap 5 Note","anchor":"#bootstrap-5-note"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Media Object | Bootstrap Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Bootstrap Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/media-object.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Media Object | Bootstrap Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/media-object.html#webpage",
+    "url": "writerside-documentation/media-object.html",
+    "name": "Media Object | Bootstrap Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Bootstrap Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="Media-Object" data-main-title="Media Object" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Bootstrap Notes  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Media-Object" id="Media-Object.md">Media Object</h1><p id="rpg0nv_3">The media object in Bootstrap is a flexible component for building layouts where you have media content (like images or icons) placed alongside textual content.</p><ul class="list _bullet" id="rpg0nv_4"><li class="list__item" id="rpg0nv_11"><p id="rpg0nv_13">It&rsquo;s often used for comments sections, list items with thumbnails, chat messages, or articles with author photos.</p></li><li class="list__item" id="rpg0nv_12"><p id="rpg0nv_14">It uses flexbox utilities internally for alignment.</p></li></ul><section class="chapter"><h2 id="structure-of-the-media-object" data-toc="structure-of-the-media-object">Structure of the Media Object</h2><p id="rpg0nv_15">The basic structure looks like this:</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;...&quot; class=&quot;mr-3&quot; alt=&quot;...&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h5 class=&quot;mt-0&quot;&gt;Heading&lt;/h5&gt;
+    Text content here...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div><p id="rpg0nv_17"><span class="control" id="rpg0nv_25">Parts:</span></p><ol class="list _decimal" id="rpg0nv_18" type="1"><li class="list__item" id="rpg0nv_26"><p id="rpg0nv_30"><span class="control" id="rpg0nv_31">.media</span> &rarr; The main wrapper.</p></li><li class="list__item" id="rpg0nv_27"><p id="rpg0nv_32"><span class="control" id="rpg0nv_33">Media element</span> &rarr; Typically an image, svg, or video placed to the left or right.</p></li><li class="list__item" id="rpg0nv_28"><p id="rpg0nv_34"><span class="control" id="rpg0nv_35">.media-body</span> &rarr; Flexible content container that takes the remaining horizontal space.</p></li><li class="list__item" id="rpg0nv_29"><p id="rpg0nv_36"><span class="control" id="rpg0nv_37">Alignment classes</span> &rarr; Spacing/margins (mr-<span class="emphasis" id="rpg0nv_38">, ml-</span>) and vertical alignment (align-self-start, etc.).</p></li></ol><p id="rpg0nv_19">The following is an example of a basic left-aligned media object:</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;user.jpg&quot; class=&quot;mr-3&quot; alt=&quot;User avatar&quot; width=&quot;64&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h5 class=&quot;mt-0&quot;&gt;John Doe&lt;/h5&gt;
+    This is an example of a Bootstrap media object where an image sits next to text.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div><p id="rpg0nv_21">How it works:</p><ul class="list _bullet" id="rpg0nv_22"><li class="list__item" id="rpg0nv_39"><p id="rpg0nv_41">The image is given a right margin (mr-3) to separate it from the text.</p></li><li class="list__item" id="rpg0nv_40"><p id="rpg0nv_42">The .media-body expands to fill the remaining space.</p></li></ul><p id="rpg0nv_23">The following is an example of a right-aligned media object:</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h5 class=&quot;mt-0&quot;&gt;Message Title&lt;/h5&gt;
+    Content goes here...
+  &lt;/div&gt;
+  &lt;img src=&quot;icon.png&quot; class=&quot;ml-3&quot; alt=&quot;Icon&quot; width=&quot;64&quot;&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="nesting-media-objects" data-toc="nesting-media-objects">Nesting Media objects</h2><p id="rpg0nv_43">You can nest another .media inside .media-body to create threaded discussions.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;user1.jpg&quot; class=&quot;mr-3&quot; alt=&quot;User1&quot; width=&quot;64&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h5 class=&quot;mt-0&quot;&gt;Parent Comment&lt;/h5&gt;
+    This is the first comment.
+
+    &lt;div class=&quot;media mt-3&quot;&gt;
+      &lt;img src=&quot;user2.jpg&quot; class=&quot;mr-3&quot; alt=&quot;User2&quot; width=&quot;64&quot;&gt;
+      &lt;div class=&quot;media-body&quot;&gt;
+        &lt;h5 class=&quot;mt-0&quot;&gt;Reply&lt;/h5&gt;
+        This is a reply inside another media object.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div><p id="rpg0nv_45">This creates a comment with a nested reply layout.</p></section><section class="chapter"><h2 id="alignment-in-media-objects" data-toc="alignment-in-media-objects">Alignment in Media Objects</h2><p id="rpg0nv_46">Since the media object is flexbox-based, you can use vertical alignment utilities:</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;photo.jpg&quot; class=&quot;align-self-start mr-3&quot; alt=&quot;...&quot; width=&quot;64&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    Top aligned content
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;photo.jpg&quot; class=&quot;align-self-center mr-3&quot; alt=&quot;...&quot; width=&quot;64&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    Center aligned content
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;media&quot;&gt;
+  &lt;img src=&quot;photo.jpg&quot; class=&quot;align-self-end mr-3&quot; alt=&quot;...&quot; width=&quot;64&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    Bottom aligned content
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="spacing-and-utilities" data-toc="spacing-and-utilities">Spacing and Utilities</h2><p id="rpg0nv_48">Common spacing classes you might use:</p><ul class="list _bullet" id="rpg0nv_49"><li class="list__item" id="rpg0nv_50"><p id="rpg0nv_53"><span class="control" id="rpg0nv_54">Horizontal margin:</span> mr-* (right margin) or ml-* (left margin)</p></li><li class="list__item" id="rpg0nv_51"><p id="rpg0nv_55"><span class="control" id="rpg0nv_56">Vertical margin:</span> mt-<span class="emphasis" id="rpg0nv_57">, mb-</span></p></li><li class="list__item" id="rpg0nv_52"><p id="rpg0nv_58"><span class="control" id="rpg0nv_59">Responsive spacing:</span> e.g., mr-md-4 (only from medium screens up)</p></li></ul></section><section class="chapter"><h2 id="media-lists" data-toc="media-lists">Media Lists</h2><p id="rpg0nv_60">Media objects can be placed inside list groups to display multiple entries (like chat messages or articles list).</p><div class="code-block" data-lang="markup">
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li class=&quot;media&quot;&gt;
+    &lt;img src=&quot;thumb1.jpg&quot; class=&quot;mr-3&quot; alt=&quot;Thumb&quot; width=&quot;64&quot;&gt;
+    &lt;div class=&quot;media-body&quot;&gt;
+      &lt;h5 class=&quot;mt-0 mb-1&quot;&gt;List Item 1&lt;/h5&gt;
+      Content for the first item.
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;media my-4&quot;&gt;
+    &lt;img src=&quot;thumb2.jpg&quot; class=&quot;mr-3&quot; alt=&quot;Thumb&quot; width=&quot;64&quot;&gt;
+    &lt;div class=&quot;media-body&quot;&gt;
+      &lt;h5 class=&quot;mt-0 mb-1&quot;&gt;List Item 2&lt;/h5&gt;
+      Content for the second item.
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</div></section><section class="chapter"><h2 id="bootstrap-5-note" data-toc="bootstrap-5-note">Bootstrap 5 Note</h2><p id="rpg0nv_62">In Bootstrap 5, the .media component was removed in favor of using utility classes with flexbox. You can replicate the same layout with:</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;d-flex&quot;&gt;
+  &lt;div class=&quot;flex-shrink-0&quot;&gt;
+    &lt;img src=&quot;...&quot; alt=&quot;...&quot; width=&quot;64&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-grow-1 ms-3&quot;&gt;
+    Content goes here
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div><p id="rpg0nv_64">This works exactly like .media but uses d-flex, flex-shrink-0, flex-grow-1, and margin spacing.</p></section><div class="last-modified">11 August 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="bootstrap-grid-system.html" class="navigation-links__prev">Bootstrap Grid System</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.js"></script></body></html>
