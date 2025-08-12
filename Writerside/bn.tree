@@ -9,4 +9,5 @@
     <toc-element topic="Introduction.md"/>
     <toc-element topic="Bootstrap-Grid-System.md"/>
     <toc-element topic="Media-Object.md"/>
+    <toc-element topic="Utilities.md"/>
 </instance-profile>
