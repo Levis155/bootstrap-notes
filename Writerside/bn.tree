@@ -7,4 +7,5 @@
                  start-page="Introduction.md">
 
     <toc-element topic="Introduction.md"/>
+    <toc-element topic="Bootstrap-Grid-System.md"/>
 </instance-profile>
