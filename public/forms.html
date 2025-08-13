@@ -1,0 +1,118 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-08-13T07:42:14.2130141"><title>Forms | Bootstrap Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"form-layout-options","level":0,"title":"Form Layout Options","anchor":"#form-layout-options"},{"id":"form-controls","level":0,"title":"Form Controls","anchor":"#form-controls"},{"id":"sizing-disabled-states","level":0,"title":"Sizing \u0026 Disabled States","anchor":"#sizing-disabled-states"},{"id":"input-groups","level":0,"title":"Input Groups","anchor":"#input-groups"},{"id":"floating-labels","level":0,"title":"Floating Labels","anchor":"#floating-labels"},{"id":"form-validation","level":0,"title":"Form Validation","anchor":"#form-validation"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Forms | Bootstrap Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Bootstrap Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/forms.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Forms | Bootstrap Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/forms.html#webpage",
+    "url": "writerside-documentation/forms.html",
+    "name": "Forms | Bootstrap Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Bootstrap Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="Forms" data-main-title="Forms" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Bootstrap Notes  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Forms" id="Forms.md">Forms</h1><p id="-7y5f95_3">Bootstrap's form system provides a collection of classes and layout utilities to make building responsive, accessible, and consistent forms easy.</p><p id="-7y5f95_4"><span class="control" id="-7y5f95_12">Key Points:</span></p><ul class="list _bullet" id="-7y5f95_5"><li class="list__item" id="-7y5f95_13"><p id="-7y5f95_17">Supports vertical, horizontal, and inline form layouts.</p></li><li class="list__item" id="-7y5f95_14"><p id="-7y5f95_18">Provides custom-styled form controls (inputs, selects, checkboxes, radios, switches, etc.).</p></li><li class="list__item" id="-7y5f95_15"><p id="-7y5f95_19">Includes validation states and helper text.</p></li><li class="list__item" id="-7y5f95_16"><p id="-7y5f95_20">Works with flexbox and grid system for positioning.</p></li></ul><section class="chapter"><h2 id="form-layout-options" data-toc="form-layout-options">Form Layout Options</h2><section class="chapter"><h3 id="vertical-forms-default" data-toc="vertical-forms-default">Vertical Forms (default)</h3><p id="-7y5f95_24">In this layout each control is stacked</p><div class="code-block" data-lang="markup">
+&lt;form&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;name&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+</div></section><section class="chapter"><h3 id="horizontal-forms" data-toc="horizontal-forms">Horizontal Forms</h3><p id="-7y5f95_26">Labels and inputs are placed side-by-side using the grid system.</p><div class="code-block" data-lang="markup">
+&lt;form&gt;
+  &lt;div class=&quot;row mb-3&quot;&gt;
+    &lt;label for=&quot;name&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Name&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+</div></section><section class="chapter"><h3 id="inline-forms" data-toc="inline-forms">Inline Forms</h3><p id="-7y5f95_28">Compact, inline display for quick inputs.</p><div class="code-block" data-lang="markup">
+&lt;form class=&quot;row g-3 align-items-center&quot;&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;
+    &lt;label for=&quot;inlineFormInput&quot; class=&quot;visually-hidden&quot;&gt;Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inlineFormInput&quot; placeholder=&quot;Name&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-auto&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+</div></section></section><section class="chapter"><h2 id="form-controls" data-toc="form-controls">Form Controls</h2><p id="-7y5f95_30">Bootstrap styles most HTML5 form controls.</p><section class="chapter"><h3 id="text-inputs" data-toc="text-inputs">Text Inputs</h3><div class="code-block" data-lang="markup">
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter text&quot;&gt;
+
+</div></section><section class="chapter"><h3 id="selects" data-toc="selects">Selects</h3><div class="code-block" data-lang="markup">
+&lt;select class=&quot;form-select&quot;&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+  &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;
+
+</div></section><section class="chapter"><h3 id="checkboxes-radios" data-toc="checkboxes-radios">Checkboxes &amp; Radios</h3><div class="code-block" data-lang="markup">
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;check1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;check1&quot;&gt;Check me&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;radio1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;radio1&quot;&gt;Option 1&lt;/label&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h3 id="switches" data-toc="switches">Switches</h3><div class="code-block" data-lang="markup">
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitch&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitch&quot;&gt;Toggle me&lt;/label&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h3 id="file-inputs" data-toc="file-inputs">File Inputs</h3><div class="code-block" data-lang="markup">
+&lt;input class=&quot;form-control&quot; type=&quot;file&quot;&gt;
+
+</div></section><section class="chapter"><h3 id="range-sliders" data-toc="range-sliders">Range Sliders</h3><div class="code-block" data-lang="markup">
+&lt;input type=&quot;range&quot; class=&quot;form-range&quot; min=&quot;0&quot; max=&quot;5&quot;&gt;
+
+</div></section></section><section class="chapter"><h2 id="sizing-disabled-states" data-toc="sizing-disabled-states">Sizing &amp; Disabled States</h2><section class="chapter"><h3 id="large-small-inputs" data-toc="large-small-inputs">Large &amp; Small Inputs</h3><div class="code-block" data-lang="markup">
+&lt;input class=&quot;form-control form-control-lg&quot; type=&quot;text&quot; placeholder=&quot;Large input&quot;&gt;
+&lt;input class=&quot;form-control form-control-sm&quot; type=&quot;text&quot; placeholder=&quot;Small input&quot;&gt;
+
+</div></section><section class="chapter"><h3 id="disabled" data-toc="disabled">Disabled</h3><div class="code-block" data-lang="markup">
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; disabled placeholder=&quot;Disabled&quot;&gt;
+
+</div></section></section><section class="chapter"><h2 id="input-groups" data-toc="input-groups">Input Groups</h2><p id="-7y5f95_47">Used to prepend or append text/icons/buttons to inputs.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot;&gt;
+  &lt;button class=&quot;btn btn-outline-secondary&quot;&gt;Send&lt;/button&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="floating-labels" data-toc="floating-labels">Floating Labels</h2><p id="-7y5f95_49">Labels float above the imput when focused or filled.</p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;form-floating mb-3&quot;&gt;
+  &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;floatingEmail&quot; placeholder=&quot;name@example.com&quot;&gt;
+  &lt;label for=&quot;floatingEmail&quot;&gt;Email address&lt;/label&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="form-validation" data-toc="form-validation">Form Validation</h2><p id="-7y5f95_51">Bootstrap applies <span class="control" id="-7y5f95_56">validation states</span> with colors and feedback messages.</p><p id="-7y5f95_52"><span class="control" id="-7y5f95_57">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;form class=&quot;needs-validation&quot; novalidate&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;validationCustom01&quot; class=&quot;form-label&quot;&gt;First name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom01&quot; required&gt;
+    &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;div class=&quot;invalid-feedback&quot;&gt;Please enter your first name.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+</div><p id="-7y5f95_54"><span class="control" id="-7y5f95_58">Validation classes:</span></p><ul class="list _bullet" id="-7y5f95_55"><li class="list__item" id="-7y5f95_59"><p id="-7y5f95_63">is-valid</p></li><li class="list__item" id="-7y5f95_60"><p id="-7y5f95_64">is-invalid</p></li><li class="list__item" id="-7y5f95_61"><p id="-7y5f95_65">valid-feedback</p></li><li class="list__item" id="-7y5f95_62"><p id="-7y5f95_66">invalid-feedback</p></li></ul></section><div class="last-modified">13 August 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="components.html" class="navigation-links__prev">Components</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.js"></script></body></html>
