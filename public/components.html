@@ -1,0 +1,160 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-08-13T06:36:24.264579"><title>Components | Bootstrap Notes</title><script type="application/json" id="virtual-toc-data">[{"id":"alerts","level":0,"title":"Alerts","anchor":"#alerts"},{"id":"badges","level":0,"title":"Badges","anchor":"#badges"},{"id":"breadcrumb","level":0,"title":"Breadcrumb","anchor":"#breadcrumb"},{"id":"buttons","level":0,"title":"Buttons","anchor":"#buttons"},{"id":"button-group","level":0,"title":"Button Group","anchor":"#button-group"},{"id":"cards","level":0,"title":"Cards","anchor":"#cards"},{"id":"carousel","level":0,"title":"Carousel","anchor":"#carousel"},{"id":"collapse","level":0,"title":"Collapse","anchor":"#collapse"},{"id":"dropdowns","level":0,"title":"Dropdowns","anchor":"#dropdowns"},{"id":"list-group","level":0,"title":"List Group","anchor":"#list-group"},{"id":"modal","level":0,"title":"Modal","anchor":"#modal"},{"id":"navbar","level":0,"title":"Navbar","anchor":"#navbar"},{"id":"pagination","level":0,"title":"Pagination","anchor":"#pagination"},{"id":"progress","level":0,"title":"Progress","anchor":"#progress"},{"id":"spinners","level":0,"title":"Spinners","anchor":"#spinners"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Components | Bootstrap Notes"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Bootstrap Notes Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/components.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Components | Bootstrap Notes"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/components.html#webpage",
+    "url": "writerside-documentation/components.html",
+    "name": "Components | Bootstrap Notes",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Bootstrap Notes Help"
+}</script><!-- End Schema.org --></head><body data-id="Components" data-main-title="Components" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Bootstrap Notes  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Components" id="Components.md">Components</h1><p id="z2tv0am_3">Bootstrap components are pre-styled, reusable UI elements that help you quickly build functional and visually consistent interfaces without writing much CSS.</p><p id="z2tv0am_4">They are built using HTML + Bootstrap classes and sometimes require JavaScript for interactivity.</p><p id="z2tv0am_5">They can be grouped into categories:</p><ul class="list _bullet" id="z2tv0am_6"><li class="list__item" id="z2tv0am_22"><p id="z2tv0am_26"><span class="control" id="z2tv0am_27">Basic content &amp; Layout Components (alerts, badges, cards, etc.)</span></p></li><li class="list__item" id="z2tv0am_23"><p id="z2tv0am_28"><span class="control" id="z2tv0am_29">Navigation Components (Navbar, breadcrumb, pagination, etc.)</span></p></li><li class="list__item" id="z2tv0am_24"><p id="z2tv0am_30"><span class="control" id="z2tv0am_31">Form Components (form controls, input groups, validation)</span></p></li><li class="list__item" id="z2tv0am_25"><p id="z2tv0am_32"><span class="control" id="z2tv0am_33">Interactive Components (modals, dropdowns, carousels, etc.)</span></p></li></ul><section class="chapter"><h2 id="alerts" data-toc="alerts">Alerts</h2><p id="z2tv0am_34">These show contextual feedback messages (success, error, warning, info).</p><p id="z2tv0am_35"><span class="control" id="z2tv0am_39">Features:</span></p><ul class="list _bullet" id="z2tv0am_36"><li class="list__item" id="z2tv0am_40"><p id="z2tv0am_42">Contextual classes: alert-primary, alert-success, alert-danger, etc.</p></li><li class="list__item" id="z2tv0am_41"><p id="z2tv0am_43">Can be dismissible with JS support.</p></li></ul><p id="z2tv0am_37"><span class="control" id="z2tv0am_44">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+  Operation completed successfully!
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+  Warning! Check your inputs.
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="badges" data-toc="badges">Badges</h2><p id="z2tv0am_45">These are small count or label indicators.</p><p id="z2tv0am_46"><span class="control" id="z2tv0am_50">Features:</span></p><ul class="list _bullet" id="z2tv0am_47"><li class="list__item" id="z2tv0am_51"><p id="z2tv0am_53">Inline text indicators for notifications or statuses.</p></li><li class="list__item" id="z2tv0am_52"><p id="z2tv0am_54">Use with headings, buttons, or nav items.</p></li></ul><p id="z2tv0am_48"><span class="control" id="z2tv0am_55">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;h1&gt;Messages &lt;span class=&quot;badge bg-secondary&quot;&gt;4&lt;/span&gt;&lt;/h1&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;
+  Notifications &lt;span class=&quot;badge bg-light text-dark&quot;&gt;3&lt;/span&gt;
+&lt;/button&gt;
+
+</div></section><section class="chapter"><h2 id="breadcrumb" data-toc="breadcrumb">Breadcrumb</h2><p id="z2tv0am_56">These indicate the current page's location in navigation hierarchy.</p><p id="z2tv0am_57"><span class="control" id="z2tv0am_59">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+</div></section><section class="chapter"><h2 id="buttons" data-toc="buttons">Buttons</h2><p id="z2tv0am_60"><span class="control" id="z2tv0am_64">Features:</span></p><ul class="list _bullet" id="z2tv0am_61"><li class="list__item" id="z2tv0am_65"><p id="z2tv0am_68"><span class="control" id="z2tv0am_69">Styles:</span> btn-primary, btn-secondary, btn-success, etc.</p></li><li class="list__item" id="z2tv0am_66"><p id="z2tv0am_70"><span class="control" id="z2tv0am_71">Sizes:</span> btn-lg, btn-sm</p></li><li class="list__item" id="z2tv0am_67"><p id="z2tv0am_72"><span class="control" id="z2tv0am_73">States:</span> disabled, active</p></li></ul><p id="z2tv0am_62"><span class="control" id="z2tv0am_74">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-success&quot;&gt;Outline&lt;/button&gt;
+
+</div></section><section class="chapter"><h2 id="button-group" data-toc="button-group">Button Group</h2><p id="z2tv0am_75">These group multiple buttons.</p><p id="z2tv0am_76"><span class="control" id="z2tv0am_78">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary&quot;&gt;Left&lt;/button&gt;
+  &lt;button class=&quot;btn btn-secondary&quot;&gt;Middle&lt;/button&gt;
+  &lt;button class=&quot;btn btn-secondary&quot;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="cards" data-toc="cards">Cards</h2><p id="z2tv0am_79">These are flexible container for content (text, images, lists, links).</p><p id="z2tv0am_80"><span class="control" id="z2tv0am_84">Features:</span></p><ul class="list _bullet" id="z2tv0am_81"><li class="list__item" id="z2tv0am_85"><p id="z2tv0am_87">Header, footer, body sections</p></li><li class="list__item" id="z2tv0am_86"><p id="z2tv0am_88">Support for images, list groups</p></li></ul><p id="z2tv0am_82"><span class="control" id="z2tv0am_89">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+  &lt;img src=&quot;image.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Short description.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Read more&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="carousel" data-toc="carousel">Carousel</h2><p id="z2tv0am_90">These provide a means for sliding through images or content.</p><p id="z2tv0am_91"><span class="control" id="z2tv0am_93">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div id=&quot;carouselExample&quot; class=&quot;carousel slide&quot; data-bs-ride=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;img src=&quot;slide1.jpg&quot; class=&quot;d-block w-100&quot; alt=&quot;Slide 1&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;img src=&quot;slide2.jpg&quot; class=&quot;d-block w-100&quot; alt=&quot;Slide 2&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel-control-prev&quot; data-bs-target=&quot;#carouselExample&quot; data-bs-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel-control-next&quot; data-bs-target=&quot;#carouselExample&quot; data-bs-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="collapse" data-toc="collapse">Collapse</h2><p id="z2tv0am_94">Shows/hides content with a sliding animation.</p><p id="z2tv0am_95"><span class="control" id="z2tv0am_97">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;p&gt;
+  &lt;a class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot;&gt;
+    Toggle
+  &lt;/a&gt;
+&lt;/p&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;collapseExample&quot;&gt;
+  &lt;div class=&quot;card card-body&quot;&gt;
+    Hidden content here.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="dropdowns" data-toc="dropdowns">Dropdowns</h2><p id="z2tv0am_98">These are toggleable menus.</p><p id="z2tv0am_99"><span class="control" id="z2tv0am_101">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot;&gt;
+    Dropdown
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="list-group" data-toc="list-group">List Group</h2><p id="z2tv0am_102">Displays a series of items.</p><p id="z2tv0am_103"><span class="control" id="z2tv0am_105">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;ul class=&quot;list-group&quot;&gt;
+  &lt;li class=&quot;list-group-item active&quot;&gt;Active item&lt;/li&gt;
+  &lt;li class=&quot;list-group-item&quot;&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+</div></section><section class="chapter"><h2 id="modal" data-toc="modal">Modal</h2><p id="z2tv0am_106">These facilitate popup dialog.</p><p id="z2tv0am_107"><span class="control" id="z2tv0am_109">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;button class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#exampleModal&quot;&gt;
+  Launch modal
+&lt;/button&gt;
+
+&lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h5&gt;Modal title&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;Modal content...&lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="navbar" data-toc="navbar">Navbar</h2><p id="z2tv0am_110">These are responsive site navigation headers.</p><p id="z2tv0am_111"><span class="control" id="z2tv0am_113">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+  &lt;button class=&quot;navbar-toggler&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+    &lt;ul class=&quot;navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+</div></section><section class="chapter"><h2 id="pagination" data-toc="pagination">Pagination</h2><p id="z2tv0am_114">These offer a means for navigating between pages.</p><p id="z2tv0am_115"><span class="control" id="z2tv0am_117">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;nav&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item disabled&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+</div></section><section class="chapter"><h2 id="progress" data-toc="progress">Progress</h2><p id="z2tv0am_118">Show task completion status.</p><p id="z2tv0am_119"><span class="control" id="z2tv0am_121">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; style=&quot;width: 50%&quot;&gt;50%&lt;/div&gt;
+&lt;/div&gt;
+
+</div></section><section class="chapter"><h2 id="spinners" data-toc="spinners">Spinners</h2><p id="z2tv0am_122">Show loading state.</p><p id="z2tv0am_123"><span class="control" id="z2tv0am_125">Example:</span></p><div class="code-block" data-lang="markup">
+&lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;&lt;/div&gt;
+
+</div></section><div class="last-modified">13 August 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="utilities.html" class="navigation-links__prev">Utilities</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.22.0-b776/app.js"></script></body></html>
